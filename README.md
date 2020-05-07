@@ -5,6 +5,9 @@ Projeto de um site com a idéia de auxiliar na tarefa de fazer compras. Nele voc
 
 Obs.: Projeto ainda em elaboração. Novas funcionalidades serão inseridas a medida que forem ficando prontas.
 
+Update: versão 1.1
+- Foi adicionada a função de pesquisa dos produtos.
+
 Caso queira fazer alguma observação, ou colaboração, favor entrar em contato.
 
           Um abraço,
