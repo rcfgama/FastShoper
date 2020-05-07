@@ -13,6 +13,20 @@
 		<div class="home">
 			<table align="center" border="1">
 				<tr>
+					<td><strong>PESQUISAR PRODUTO:</strong></td>
+				</tr>
+				<tr>
+					<td>
+						<form method="POST" action="pesquisa.php">
+							Pesquisa:<input type="text" name="pesquisa" placeholder="PRODUTO">
+							<input type="submit" value="ENVIAR">							
+						</form>		
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table align="center" border="1">
+				<tr>
 					<td><strong>ID</strong></td>
 					<td><strong>PRODUTO</strong></td>
 					<td><strong>UNID.</strong></td>

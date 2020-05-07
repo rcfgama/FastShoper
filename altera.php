@@ -16,7 +16,8 @@
 					<td><strong>PRODUTO</strong></td>
 					<td><strong>UNID.</strong></td>
 					<td><strong>VALOR</strong></td>
-					<td><strong>QUANTIDADE</strong></td>
+		 			<td><strong>QUANTIDADE</strong></td>
+		 			<td><strong>SALVAR?</strong></td>
 				</tr>
 				<?php
 				$ident = $_GET['id'];
@@ -41,22 +42,8 @@
 							<td>
 								<input type="text" name="qtd" placeholder="QTD" required class="input" value="<?=$line["QTD"]?>">
 							</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="hidden">
-							</td>
-							<td>
-								<input type="hidden">
-							</td>
 							<td>
 								<input align="center" type="submit" value="SALVAR" name="submit">
-							</td>
-							<td>
-								<input type="hidden">
-							</td>
-							<td>
-								<input type="hidden">
 							</td>
 						</tr>
 					</form>	
