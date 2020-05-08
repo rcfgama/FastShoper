@@ -16,7 +16,7 @@
 				</tr>
 				<?php
 					include("conecta.php");
-					$resultado = mysqli_query($conexao, "SELECT SUM(round(TOTAL,2)) AS totalPreco FROM produtos");
+					$resultado = mysqli_query($conexao, "SELECT SUM(round(TOTAL,2)) AS totalPreco FROM produtos WHERE COMPRAR = 1");
 				$linhas = mysqli_num_rows($resultado);
 					while($linhas = mysqli_fetch_array($resultado)) {?>
 						<tr>
@@ -35,7 +35,7 @@
 					<td width="10"><strong>ALTERAR</strong></td>
 				</tr>
 				<?php
-				$seleciona = mysqli_query($conexao, "select * from produtos order by id");
+				$seleciona = mysqli_query($conexao, "SELECT * FROM `produtos` WHERE COMPRAR = 1");
 					while($campo = mysqli_fetch_array($seleciona)) {?>
 						<tr>
 							<td><?=$campo["NOME"]?></td>

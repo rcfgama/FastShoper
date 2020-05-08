@@ -33,6 +33,7 @@
 					<td><strong>VALOR</strong></td>
 					<td><strong>QUANTIDADE</strong></td>
 					<td><strong>TOTAL</strong></td>
+					<td width="10"><strong>COMPRAR</strong></td>
 					<td width="10"><strong>ALTERAR</strong></td>
 					<td width="10"><strong>EXCLUIR</strong></td>
 				</tr>
@@ -47,10 +48,15 @@
 							<td><?=$campo["VALOR"]?></td>
 							<td><?=$campo["QTD"]?></td>
 							<td><?=$campo["TOTAL"]?></td>
+							<td><a href="upall.php?id=<?=$campo["ID"]?>">Adicionar</a></td>
 							<td><a href="altera.php?id=<?=$campo["ID"]?>">Editar</a></td>
 							<td align="center"><a href="#" onclick="verifica(<?=$campo["ID"]?>)">Excluir</a></td>
 						</tr>
 				<?php	}?>	
+			</table>
+			<br>
+			<table>
+				<a href="clean.php" type="button">Limpar a Lista de Compras</a>
 			</table>
 			<br>
 			<form action="insere.php" method="post">

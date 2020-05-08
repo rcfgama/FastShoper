@@ -21,8 +21,8 @@
 			<br>
 
 			<a href="compra.php">COMPRAR AGORA</a>
-			<a href="insere.php">INSERIR NOVO ITEM</a>
-			<a href="edita.php">EDITAR LISTA EXISTENTE</a>
+			<a href="insere.php">INSERIR ITEM</a>
+			<a href="edita.php">EDITAR LISTA</a>
 		</div>
 		<footer>
 			Desenvolvido por Ronaldo Gama
