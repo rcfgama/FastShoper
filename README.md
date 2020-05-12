@@ -5,9 +5,14 @@ Projeto de um site com a idéia de auxiliar na tarefa de fazer compras. Nele voc
 
 Obs.: Projeto ainda em elaboração. Novas funcionalidades serão inseridas a medida que forem ficando prontas.
 
-Update: versão 1.2
-- Nova funcionalidade: Lista de Compras.
-          A versão 1.2 recebe a funcionalidade de lista de compras. Agora é possível selecionar na lista geral somente os produtos que você deseja comprar. Deste modo ao chegar no mercado você não ficará perdendo tempo procurando os itens que você deseja na lista geral.
+Versão 1.3: O que há de novo?
+- Na página da lista de compras foi inserido um botão para ir direto para a edição de listas.
+- Os botões em cada página foram para cima da lista.
+- Títulos inseridos nas páginas
+- Novas possibilidades na página de pesquisa.
+- Transição de produtos entre as listas.
+- Criação da página carrinho.
+- Criação de total estimado para a lista de compras e um total das compras no carrinho.
 
 Caso queira fazer alguma observação, ou colaboração, favor entrar em contato.
 
