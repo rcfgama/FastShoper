@@ -1,5 +1,6 @@
 <?php
-		include("conecta.php");
+/* Arquivo que manda a inserção de um novo produto para o banco de dados na página Fast Shoper. Desenvolvida por Ronaldo Gama - versão 1.3 */
+	include("conecta.php");
 
 	$NOME = $_POST['nome'];
 	$UNID = $_POST['unid'];

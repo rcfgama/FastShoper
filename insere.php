@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Arquivo para inserir um novo item na página Fast Shoper. Desenvolvida por Ronaldo Gama - versão 1.3 -->
 	<head>
 		<title>FastShoper</title>
 		<meta charset="utf-8">
@@ -7,9 +8,16 @@
 	</head>
 	<body>
 		<header>
-			<img src="fast.png" width="250px">
+			<img src="fast.png" width="250px"><strong>INSERIR NOVO ITEM</strong>
 		</header>		
 		<div class="home">
+			<p>
+				<a href="edita.php">IR PARA EDITAR LISTA</a>
+				<a href="index.php">VOLTAR</a>
+			</p>
+			<br>
+			<p>Obs.: Antes de inserir um novo item na lista, certifique-se que o mesmo já não exista, realizando uma pesquisa.</p>
+			<br>
 			<form action="processa.php" method="post">
 				<p><label>Escolha tipo do Estabelecimento:</label><br>
 				<select name="Estabelecimento">
@@ -31,11 +39,9 @@
 				<br>
 				<p><input type="submit" value="INSERIR" name="submit"></p>
 			</form>
-			<br>
-			<a href="edita.php">SAIR</a>
 		</div>
 		<footer>
-			Desenvolvido por Ronaldo Gama
+			Desenvolvido por Ronaldo Gama - versão 1.3
 		</footer>
 	</body>
 </html>

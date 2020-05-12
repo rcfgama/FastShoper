@@ -1,4 +1,5 @@
 <?php
+/* Arquivo para deletar os produtos na lista geral na página Fast Shoper. Desenvolvida por Ronaldo Gama - versão 1.3 */
 	$recid = $_GET['idexc'];
 
 	include("conecta.php");

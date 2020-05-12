@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Arquivo para editar os produtos na lista geral da página Fast Shoper. Desenvolvido por Ronaldo Gama. versão 1.3 -->
 	<head>
 		<title>FastShoper</title>
 		<meta charset="utf-8">
@@ -7,7 +8,7 @@
 	</head>
 	<body>
 		<header>
-			<img src="fast.png" width="250px">
+			<img src="fast.png" width="250px"><strong>EDITAR ÍTEM</strong>
 		</header>		
 		<div class="home">
 			<table align="center" border="2">
@@ -50,10 +51,11 @@
 				<?php	}?>	
 			</table>
 			<br>
+			<a href="edita.php">VOLTAR PARA EDITAR LISTA</a>
 			<a href="index.php">SAIR</a>
 		</div>
 		<footer>
-			Desenvolvido por Ronaldo Gama
+			Desenvolvido por Ronaldo Gama - versão 1.3
 		</footer>
 	</body>
 </html>

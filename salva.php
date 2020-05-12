@@ -1,5 +1,6 @@
 <?php
-		include("conecta.php");
+/* Arquivo que envia as alterações do produto para o banco de dados na página Fast Shoper. Desenvolvida por Ronaldo Gama - versão 1.3 */	
+	include("conecta.php");
 
 	$ID = $_POST['id'];
 	$NOME = $_POST['nome'];

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Arquivo que monta a lista geral para a edição na página Fast Shoper. Desenvolvida por Ronaldo Gama - versão 1.3 -->
 	<head>
 		<title>FastShoper</title>
 		<meta charset="utf-8">
@@ -8,7 +9,7 @@
 	</head>
 	<body>
 		<header>
-			<img src="fast.png" width="250px">
+			<img src="fast.png" width="250px"><strong>LISTA GERAL</strong>
 		</header>		
 		<div class="home">
 			<table align="center" border="1">
@@ -25,6 +26,13 @@
 				</tr>
 			</table>
 			<br>
+				<p>
+					<a href="insere.php">INSERIR NOVO PRODUTO</a>
+					<a href="compra.php">IR PARA LISTA DE COMPRAS</a>
+					<a href="clean.php">LIMPAR A LISTA DE COMPRAS</a>
+					<a href="index.php">VOLTAR</a>
+				</p>
+			<br>
 			<table align="center" border="1">
 				<tr>
 					<td><strong>ID</strong></td>
@@ -39,7 +47,7 @@
 				</tr>
 				<?php
 					include("conecta.php");
-				$seleciona = mysqli_query($conexao, "select * from produtos order by id");
+				$seleciona = mysqli_query($conexao, "SELECT * FROM `produtos` WHERE COMPRAR = 'GERAL'");
 					while($campo = mysqli_fetch_array($seleciona)) {?>
 						<tr>
 							<td><?=$campo["ID"]?></td>
@@ -54,18 +62,9 @@
 						</tr>
 				<?php	}?>	
 			</table>
-			<br>
-			<table>
-				<a href="clean.php" type="button">Limpar a Lista de Compras</a>
-			</table>
-			<br>
-			<form action="insere.php" method="post">
-				<p><input type="submit" value="INSERIR PRODUTO" name="submit"></p>
-			<br>
-			<a href="index.php">SAIR</a>	
 		</div>
 		<footer>
-			Desenvolvido por Ronaldo Gama
+			Desenvolvido por Ronaldo Gama - versão 1.3
 		</footer>
 	</body>
 </html>
