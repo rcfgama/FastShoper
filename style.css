@@ -1,9 +1,9 @@
-/* Aequivo CSS para a página FastShoper desenvolvido por Ronaldo Gama - versão 1.3 */
+/* Aequivo CSS para a página FastShopper desenvolvido por Ronaldo Gama - versão 0.4 */
 
 /*tags*/
 * {
 	font-family: Helvetica;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 
@@ -11,13 +11,14 @@ body {
 	background-color: #FFFFF0;
 }
 
-header {
+/*Ids*/
+#header {
 	background-color: #3CB371;
 	height: 160px;
 	text-align: center;
 }
 
-footer {
+#footer {
 	background-color: #3CB371;
 	height: 30px;
 	text-align: center;
@@ -25,13 +26,13 @@ footer {
 	padding: 5px;
 }
 
-.home {
+#home {
 	text-align: center;
-	min-height: 415px;
+	min-height: 430px;
 	padding: 20px;
 }
 
-.home a {
+#home a {
 	font-size: 10px;
 	width: 160px;
 	height: 20px;
@@ -45,7 +46,38 @@ footer {
 	text-align: center;
 }
 
-.home a:hover {
+#home a:hover {
 	color: #32CD32;
 	font-weight: bold;
 } 
+
+/* Alteração de layout responsivo para telas de smartphones */
+@media screen and (max-width: 576px) {
+
+	#header {
+		height: 145px;
+		padding: 0px;
+	}
+
+	#home {
+		min-height: 430px; 
+	}
+
+	* {
+		font-size: 12px;
+		font-family: Calibri;
+	}
+
+	#butleft {
+		margin: 5px;
+	}
+
+	#butrght {
+		margin: 5px;
+	}
+
+	#footer {
+		height: 50px;
+	}
+
+}
