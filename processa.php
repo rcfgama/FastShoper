@@ -1,5 +1,5 @@
 <?php
-/* Arquivo que manda a inserção de um novo produto para o banco de dados na página Fast Shoper. Desenvolvida por Ronaldo Gama - versão 1.3 */
+/* Arquivo que manda a inserção de um novo produto para o banco de dados na página Fast ShoPper. Desenvolvida por Ronaldo Gama - versão 0.4 */
 	include("conecta.php");
 
 	$NOME = $_POST['nome'];
@@ -8,8 +8,7 @@
 	$QTD = $_POST['qtd'];
 	$TOTAL = $VALOR * $QTD;
 
-	mysqli_query($conexao, "insert into produtos (NOME, UNID, VALOR, QTD, TOTAL) values ('$NOME', '$UNID', '$VALOR', '$QTD', '$TOTAL')");
+	mysqli_query($conexao, "insert into produtos (NOME, UNID, VALOR, QTD, TOTAL, COMPRAR) values ('$NOME', '$UNID', '$VALOR', '$QTD', '$TOTAL', 'GERAL')");
 
-	header("location:edita.php");
-
+	header("location:?b=edita");
 ?>

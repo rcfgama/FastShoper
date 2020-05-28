@@ -1,30 +1,73 @@
-<!DOCTYPE html>
-<html>
-<!-- Arquivo inicial da página Fast Shoper. Desenvolvida por Ronaldo Gama - versão 1.3 -->
-	<head>
-		<title>FastShoper</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<header>
-			<img src="fast.png" width="250px">
-		</header>
-		<div class="home">
-			<h1>Seja bem-vinda ao Fast Shoper, seu assistente de compras no mercado!</h1>
-			<br>
-			<h2>O que você deseja fazer hoje?</h2>
-			<br>
-			<p><img src="compra.jpg"></p>
-			<br>
-			<p>
-				<a href="compra.php">COMPRAR AGORA</a>
-				<a href="insere.php">INSERIR ITEM</a>
-				<a href="edita.php">EDITAR LISTA</a>
-			</p>
-		</div>
-		<footer>
-			Desenvolvido por Ronaldo Gama - versão 1.3
-		</footer>
-	</body>
-</html>
+<?php
+	/* Arquivo index PHP para tornar o site Fast Shopper dinâmico. Desenvolvido por Ronaldo Gama - versão 0.4 */
+	$pag = 'home';
+
+	if (isset($_GET['b'])) {
+		$pag = addslashes($_GET['b']);
+	}
+
+	include 'header.php';
+
+	switch ($pag) {
+		case 'home':
+			include 'home.php';
+			break;
+
+		case 'edita':
+			include 'edita.php';
+			break;
+
+		case 'insere':
+			include 'insere.php';
+			break;
+	
+		case 'compra':
+			include 'compra.php';
+			break;
+	
+		case 'pesquisa':
+			include 'pesquisa.php';
+			break;
+
+		case 'processa':
+			include 'processa.php';
+			break;
+
+		case 'clean':
+			include 'clean.php';
+			break;
+
+		case 'upall':
+			include 'upall.php';
+			break;
+
+		case 'altera':
+			include 'altera.php';
+			break;
+
+		case 'deleta':
+			include 'deleta.php';
+			break;
+
+		case 'salva':
+			include 'salva.php';
+			break;
+
+		case 'carro':
+			include 'carro.php';
+			break;
+
+		case 'down':
+			include 'down.php';
+			break;
+
+		case 'upcar':
+			include 'upcar.php';
+			break;
+
+		default:
+			include 'home.php';
+			break;	
+	}
+
+	include 'footer.php';

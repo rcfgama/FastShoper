@@ -4,6 +4,6 @@
 
 	mysqli_query($conexao, "UPDATE produtos SET COMPRAR = 'GERAL'");
 
-	header("location:edita.php");
+	header("location:?b=edita");
 
 ?>
