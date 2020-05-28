@@ -1,18 +1,15 @@
 # FastShoper
 Projeto de site para auxiliar na tarefa de fazer compras em mercados,
 
-Projeto de um site com a idéia de auxiliar na tarefa de fazer compras. Nele você monta uma lista com os produtos e ainda pode ir somando os valores para saber quando vai gastar no final.
+Projeto de um site com a idéia de auxiliar na tarefa de fazer compras. Nele você monta uma lista com os produtos e ela faz uma estimativa de valor que será gasto com os produtos escolhidos previamente e o total da compra que está no carrinho.
 
 Obs.: Projeto ainda em elaboração. Novas funcionalidades serão inseridas a medida que forem ficando prontas.
 
-Versão 1.3: O que há de novo?
-- Na página da lista de compras foi inserido um botão para ir direto para a edição de listas.
-- Os botões em cada página foram para cima da lista.
-- Títulos inseridos nas páginas
-- Novas possibilidades na página de pesquisa.
-- Transição de produtos entre as listas.
-- Criação da página carrinho.
-- Criação de total estimado para a lista de compras e um total das compras no carrinho.
+Versão 0.4: O que há de novo?
+- Agora o Lay-out é responsivo com Bootstrap.
+- Agora na lista de copras também tem uma busca de produtos.
+- Agora o site é todo dinamico com PHP.
+- Todos os valores tiveram a formatação corrigida.
 
 Caso queira fazer alguma observação, ou colaboração, favor entrar em contato.
 
